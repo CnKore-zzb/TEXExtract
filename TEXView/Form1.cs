@@ -66,7 +66,7 @@ namespace TEXView
                             ImgInfo _i = _f.ImgLists[imgidx];
                             _i.Img.Save(ImgDir + string.Format("\\{0}.bmp", imgidx), ImageFormat.Bmp);
                         }
-                        Trace.WriteLine(string.Format("Filenum {0} Ver:{1} Type:{2}", _filenum,_f.Header.Version, _f.Header.ImgType));
+                        Console.WriteLine(string.Format("Filenum {0} Ver:{1} Type:{2}", _filenum,_f.Header.Version, _f.Header.ImgType));
                     }
                 }
                 while (_datsource.Position < _datsource.Length);
